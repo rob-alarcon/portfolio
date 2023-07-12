@@ -9,7 +9,7 @@ pdfLink: roberto-alarcon-resume.pdf
 
 **Software Engineer**
 
-San Diego, USA | http://robalarcon.com
+San Diego, USA | http://www.robalarcon.com
 
 Over 10 years of experience as a full-stack software engineer working across a variety of front-end and back-end platforms including .NET (asp.net, apis, etc), Angular, React, Android, NodeJs and DBs including SqlServer, Postgres, MongoDB.
 
