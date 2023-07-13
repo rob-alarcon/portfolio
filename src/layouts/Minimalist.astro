@@ -31,6 +31,15 @@ const initials = title
     {noIndex && <meta name="robots" content="noindex" />}
     <title>{title}</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-HVM921T2TJ"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HVM921T2TJ');
+  </script>
   <body class="my-0 bg-indigo-50 dark:bg-slate-900 sm:my-14">
     <div class="container mx-auto flex justify-center">
       <article class="minimalist relative">
