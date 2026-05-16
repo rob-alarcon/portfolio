@@ -1,23 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
 body {
   font-family: 'Poppins', sans-serif;
 }
 
 ::selection {
-  @apply bg-indigo-400 bg-opacity-50 text-white;
+  @apply bg-terminal-green bg-opacity-30 text-terminal-green;
 }
 
 article.minimalist {
   @apply prose prose-slate m-0
-    max-w-fit bg-white px-12 py-8 pt-20 prose-h1:text-3xl prose-h1:uppercase prose-h2:mb-3 prose-h2:mt-8 prose-h2:text-sm prose-h2:uppercase
-    prose-h2:text-slate-500 prose-h3:mb-3
+    max-w-fit bg-terminal-card px-12 py-8 pt-20 prose-h1:text-3xl prose-h1:uppercase prose-h2:mb-3 prose-h2:mt-8 prose-h2:text-sm prose-h2:uppercase
+    prose-h2:text-terminal-text_dim prose-h3:mb-3
     prose-h3:mt-8 prose-h3:text-xl prose-h3:uppercase prose-h4:mb-3 prose-h4:mt-4 
-    prose-h4:text-sm prose-h4:text-slate-600 prose-p:my-2 prose-p:text-sm
-    prose-p:leading-6 prose-a:font-bold prose-a:no-underline prose-a:transition-colors hover:prose-a:text-slate-400 
+    prose-h4:text-sm prose-h4:text-terminal-text_dim prose-p:my-2 prose-p:text-sm
+    prose-p:leading-6 prose-a:font-bold prose-a:no-underline prose-a:text-terminal-cyan prose-a:transition-colors hover:prose-a:text-terminal-green
     prose-li:text-sm prose-table:mt-4 prose-thead:border-0 prose-th:p-0
-    prose-th:font-medium prose-td:p-0 prose-td:text-slate-500
-    dark:bg-slate-800
-    dark:prose-invert
-    prose-h4:dark:text-slate-400  
+    prose-th:font-medium prose-td:p-0 prose-td:text-terminal-text_dim
+    prose-code:text-terminal-green prose-code:bg-terminal-bg prose-code:px-1 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
+    prose-strong:text-terminal-green
+    prose-ul:marker:text-terminal-green
     sm:px-24 sm:py-14
-    sm:shadow-md lg:max-w-4xl;
+    lg:max-w-4xl;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: #c9d1d9 !important;
+}
+
+.prose p, .prose li {
+  color: #8b949e !important;
+}
+
+.prose a {
+  color: #58a6ff !important;
+}
+
+.prose a:hover {
+  color: #3fb950 !important;
 }
