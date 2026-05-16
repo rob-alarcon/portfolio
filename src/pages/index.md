@@ -1,16 +1,16 @@
 ---
-title: Roberto Alarcon - Software Engineer
-description: Personal site of Roberto Alarcon, Software Engineer.
+title: Roberto Alarcon - Senior Software Engineer
+description: Personal site of Roberto Alarcon, Senior Software Engineer.
 layout: ../layouts/Minimalist.astro
 ---
 
 # Roberto Alarcon
 
-**Software Engineer**
+**Senior Software Engineer**
 
-I am a full-stack software engineer with 10+ years of experience based in San Diego, California. I currently work with React, JavaScript, TypeScript, SQL Server, Postgres, MongoDB, .NET, and C#. I have a strong understanding of the full software development lifecycle, from requirements gathering and analysis to design, implementation, testing, and deployment. I am also proficient in Agile methodologies and have experience working in a high-quality, collaborative environment.
+I am a performance-obsessed Senior Software Engineer with 17+ years in C#/.NET, distributed systems, and event-driven architecture. Based in San Diego, California, I have a proven track record resolving critical production incidents, mitigating database storms, and optimizing high-throughput Kafka and PostgreSQL pipelines.
 
-I am a highly motivated and results-oriented individual with a passion for technology. I am always looking for new challenges and opportunities to learn and grow.
+I am full-stack across .NET Core, Angular, React, and Azure — now integrating AI capabilities via OpenAI SDK and Claude Code.
 
 **Links**
 
