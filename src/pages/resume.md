@@ -1,7 +1,7 @@
 ---
 title: Roberto Alarcon - Resume
 description: Resume of Roberto Alarcon, Senior Software Engineer specializing in C#/.NET, distributed systems, event-driven architecture, and Azure.
-layout: ../layouts/Minimalist.astro
+layout: ../layouts/Base.astro
 ---
 
 # Roberto Alarcon
@@ -12,7 +12,7 @@ San Diego, CA · [rob.alarcon@gmail.com](mailto:rob.alarcon@gmail.com) · [linke
 
 ## Professional Summary
 
-Performance-obsessed Senior Software Engineer with 17+ years in C#/.NET, distributed systems, and event-driven architecture. Sole engineer owning the backend, database, and Azure infrastructure of a ~40,000-device IoT platform — root-causing decade-old stability issues, eliminating database bottlenecks, and taking over DevOps end to end. Full-stack across .NET, Go, Angular, and React, using AI-assisted engineering (Claude Code, OpenAI SDK) to ship faster.
+Performance-obsessed Senior Software Engineer with 17+ years in C#/.NET, distributed systems, and event-driven architecture. Sole engineer owning the backend, database, and Azure infrastructure of an IoT platform serving tens of thousands of devices — root-causing decade-old stability issues, eliminating database bottlenecks, and taking over DevOps end to end. Full-stack across .NET, Go, Angular, and React, using AI-assisted engineering (Claude Code) to ship faster.
 
 ## Technical Skills
 
@@ -20,7 +20,7 @@ Performance-obsessed Senior Software Engineer with 17+ years in C#/.NET, distrib
 - **Data & Messaging:** PostgreSQL, PgBouncer, SQL Server, Redis, NATS, Kafka
 - **Cloud & Infrastructure:** Azure (AKS, App Service, Container Instances, Azure Database for PostgreSQL), Kubernetes, Docker, Windows Server, Linux, certbot / TLS automation, Datadog
 - **Frontend:** Angular, React, TypeScript, JavaScript, Tailwind
-- **AI:** Claude Code, OpenAI SDK
+- **AI:** Claude Code
 
 ## Work Experience
 
@@ -28,14 +28,14 @@ Performance-obsessed Senior Software Engineer with 17+ years in C#/.NET, distrib
 
 #### Senior Software Engineer | San Diego, CA | 2023 - Present
 
-- **Platform ownership:** Sole engineer owning backend, database, and Azure infrastructure for an IoT platform serving ~40,000 devices. Raised uptime from 80% to 99% and root-caused stability issues that had persisted for a decade, avoiding a planned outsourced rewrite.
+- **Platform ownership:** Sole engineer owning backend, database, and Azure infrastructure for an IoT platform serving tens of thousands of devices. Raised uptime from 80% to 99% and root-caused stability issues that had persisted for a decade, avoiding a planned outsourced rewrite.
 - **Database bottleneck:** Found telemetry records padded to 1 MB (actual payload 8–16 KB) rewritten every 5 seconds and read continuously. Shipped an in-memory cache as a safe interim fix, then removed the padding — cutting monthly network traffic by ~97% (from ~1.4 TiB to under 40 GiB received) and ending timeouts.
 - **Connections & load:** Rebuilt database connection management across PgBouncer and the internal pool, eliminating leaked and dead connections. Introduced NATS to queue and throttle the request spikes behind recurring database storms.
 - **Scaling for large customers:** Replaced per-device query loops with set-based queries so large enterprise accounts scale; cut UI load times by 50% through batching, SQL rewrites, and index tuning.
 - **Database migration:** Led a 9-week, zero-downtime migration from Advantage Database Server to Azure Database for PostgreSQL, preserving interface contracts for legacy clients.
 - **Concurrency:** Diagnosed and fixed deadlocks and thread starvation in SemaphoreSlim-based code guarding shared connection pools.
 - **DevOps:** Took over DevOps: automated TLS certificate renewal with certbot across App Service, Container Instances, AKS, and Windows Server; rebuilt deployments; own Postgres maintenance — using AI-assisted workflows (Claude Code).
-- **Modernization:** Designed and am building a Go-based TCP gateway with a .NET 8 backend to replace the legacy device server; built Kafka pub/sub messaging and OpenAI-powered natural-language reporting.
+- **Modernization:** Designed and am building a Go-based TCP gateway with a .NET 8 backend to replace the legacy device server; built Kafka pub/sub messaging and AI-powered natural-language reporting.
 
 ### [Lytx, Inc.](https://www.lytx.com/)
 
