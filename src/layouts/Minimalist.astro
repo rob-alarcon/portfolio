@@ -1,18 +1,16 @@
 ---
 import '@fontsource/poppins';
-import Download from '../components/Download.astro';
 import '../styles.css';
 
 type Props = {
   frontmatter: {
     title: string;
-    pdfLink?: string;
     noIndex?: boolean;
     description?: string;
   };
 };
 
-const { title, pdfLink, noIndex, description } = Astro.props.frontmatter;
+const { title, noIndex, description } = Astro.props.frontmatter;
 
 const initials = title
   .split(' ')
@@ -55,13 +53,6 @@ const initials = title
             </a>
           </div>
         </div>
-        {
-          pdfLink && (
-            <div class="not-prose absolute right-4 top-4">
-              <Download href={pdfLink} />
-            </div>
-          )
-        }
         <slot />
       </article>
     </div>
